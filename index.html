@@ -1,72 +1,105 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta name="title" content="ComplectSnab — Taminot va kompleks ta’minot kompaniyasi">
-<meta name="description" content="ComplectSnab — O‘zbekistonda qurilish, xo‘jalik va sanoat mahsulotlari uchun ishonchli taminotchi. Kompleks ta’minot, tez yetkazib berish va sifatli xizmat.">
-<meta name="keywords" content="taminot, complectsnab, qurilish mahsulotlari, xo‘jalik mahsulotlari, kompleks ta’minot, taminotchi, uzbekistan, toshkent, snabjenie, снабжение, оптовые товары">
-<meta name="robots" content="index, follow">
-  <meta name="description" content="ComplectSnab — qurilish, xo‘jalik va sanoat mahsulotlari yetkazib beruvchi ishonchli kompaniya. Taminot, logistika va ta’minot xizmatlari.">
-<meta name="keywords" content="ComplectSnab, taminot, qurilish, xo‘jalik mahsulotlari, logistika, yetkazib berish, O‘zbekiston">
-<meta name="author" content="ComplectSnab">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="AI_sW3iYCpThPw2c5DiStc7OLTrmhG0QgIbNB_MZUog" />
-  <meta name="description" content="ComplectSnab — qurilish, ishlab chiqarish va xo‘jalik mahsulotlari bo‘yicha kompleks ta’minot kompaniyasi. Sifat, tezkorlik va ishonchlilik.">
-  <meta name="keywords" content="ComplectSnab, ta'minot, qurilish, xo‘jalik mahsulotlari, logistika, tovarlar, yetkazib berish, O‘zbekiston, Taminotchi">
-  <meta name="author" content="ComplectSnab">
-  <title>ComplectSnab — Qurilish va xo‘jalik mahsulotlari ta’minoti</title>
-  <link rel="canonical" href="https://taminochi-hub.github.io/complectsnab-website/">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://taminochi-hub.github.io/complectsnab-website/sitemap.xml">
 
+  <!-- ✅ SEO meta-teglar -->
+  <title>ComplectSnab — Qurilish va xo‘jalik mahsulotlari uchun kompleks taminot kompaniyasi</title>
+  <meta name="description" content="ComplectSnab — O‘zbekistonda qurilish, xo‘jalik va sanoat mahsulotlari uchun ishonchli kompleks taminot kompaniyasi. Biz sifatli mahsulotlar, tez yetkazib berish va professional xizmatlarni taqdim etamiz.">
+  <meta name="keywords" content="taminot, complectsnab, qurilish mahsulotlari, xo‘jalik mahsulotlari, kompleks ta’minot, taminotchi, uzbekistan, toshkent, snabjenie, снабжение, оптовые товары, строительные материалы, комплексное снабжение">
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ Google Search Console tasdiqlash -->
+  <meta name="google-site-verification" content="AI_sW3iYCpThPw2c5DiStc7OLTrmhG0QgIbNB_MZUog" />
+
+  <!-- ✅ Open Graph (Facebook, Telegram uchun) -->
+  <meta property="og:title" content="ComplectSnab — Qurilish va xo‘jalik mahsulotlari uchun kompleks taminot kompaniyasi">
+  <meta property="og:description" content="O‘zbekistondagi eng ishonchli kompleks taminot kompaniyasi — ComplectSnab. Qurilish va xo‘jalik mahsulotlari bo‘yicha professional yechimlar.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://taminochi-hub.github.io/complectsnab-website/">
+  <meta property="og:image" content="https://taminochi-hub.github.io/complectsnab-website/cover.jpg">
+
+  <!-- ✅ Stil (TailwindCSS CDN orqali) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { background-color: #fdfdfd; color: #222; font-family: 'Inter', sans-serif; }
     .gold { color: #c6a14b; }
     .bg-gold { background-color: #c6a14b; }
-    .btn { padding: 8px 16px; border-radius: 6px; border: 1px solid #c6a14b; color: #003366; }
+    .btn { padding: 8px 16px; border-radius: 6px; border: 1px solid #c6a14b; color: #003366; transition: 0.3s; }
     .btn:hover { background-color: #c6a14b; color: white; }
   </style>
 </head>
+
 <body class="antialiased">
 
+  <!-- ✅ Header -->
   <header class="bg-white shadow-md">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-800">ComplectSnab <span class="gold">Taminot</span></h1>
+      <h1 class="text-2xl font-bold text-blue-800">
+        ComplectSnab — Qurilish va xo‘jalik mahsulotlari uchun <span class="gold">kompleks taminot kompaniyasi</span>
+      </h1>
       <div>
-        <button class="btn">UZ 🇺🇿</button>
-        <button class="btn">RU 🇷🇺</button>
+        <button id="langUz" class="btn">🇺🇿 UZ</button>
+        <button id="langRu" class="btn">🇷🇺 RU</button>
       </div>
     </div>
   </header>
 
+  <!-- ✅ Asosiy kontent -->
   <main class="max-w-6xl mx-auto px-4 py-10">
+
     <section class="text-center mb-10">
-      <h2 class="text-3xl font-semibold mb-2">Biz haqimizda</h2>
-      <p class="text-gray-700">
-        ComplectSnab kompaniyasi qurilish, ishlab chiqarish va xo‘jalik sohalariga sifatli mahsulotlarni tezkor yetkazib beradi.
+      <h2 class="text-3xl font-bold text-blue-900 mb-2">Biz haqimizda</h2>
+      <p class="text-gray-700 text-lg">
+        ComplectSnab — bu qurilish va xo‘jalik mahsulotlari bo‘yicha ishonchli kompleks ta’minotchi.
+        Biz mijozlarga sifatli mahsulotlar, tezkor xizmat va professional yondashuvni taqdim etamiz.
       </p>
     </section>
 
-    <section class="mb-10">
-      <h3 class="text-2xl font-semibold gold mb-2">Xizmatlarimiz</h3>
-      <ul class="list-disc ml-6 text-gray-700">
-        <li>Qurilish va ishlab chiqarish mahsulotlari ta’minoti</li>
-        <li>Logistika va yetkazib berish</li>
-        <li>Mahsulotlarni omborlash va distribyutsiya</li>
+    <section id="services" class="mb-10">
+      <h2 class="text-2xl font-semibold gold mb-2">Xizmatlarimiz</h2>
+      <ul class="list-disc ml-6 text-gray-700 text-lg">
+        <li>Taminot va kompleks snabjenie xizmatlari</li>
+        <li>Qurilish materiallari bilan ta’minlash</li>
+        <li>Xo‘jalik mahsulotlari yetkazib berish</li>
+        <li>Yirik korxona va tashkilotlarga yetkazib berish tizimi</li>
       </ul>
     </section>
 
     <section id="contact" class="mb-10">
-      <h3 class="text-2xl font-semibold gold mb-2">Bog‘lanish</h3>
-      <p>Email: info@complectsnab.uz</p>
-      <p>Telefon: +998 90 123 45 67</p>
-      <p>Manzil: Toshkent, O‘zbekiston</p>
+      <h2 class="text-2xl font-semibold gold mb-2">Aloqa uchun</h2>
+      <p class="text-gray-700">
+        📞 Telefon: <a href="tel:+998901234567" class="text-blue-700 underline">+998 90 123 45 67</a><br>
+        ✉️ Email: <a href="mailto:info@complectsnab.uz" class="text-blue-700 underline">info@complectsnab.uz</a><br>
+        📍 Manzil: Toshkent, O‘zbekiston
+      </p>
     </section>
+
   </main>
 
-  <footer class="bg-gold text-white text-center py-4 mt-10">
-    <p>© 2025 ComplectSnab — Barcha huquqlar himoyalangan</p>
+  <!-- ✅ Footer -->
+  <footer class="bg-gray-100 text-center py-4 text-sm text-gray-600">
+    <p>© 2025 ComplectSnab — Qurilish va xo‘jalik mahsulotlari uchun kompleks taminot kompaniyasi</p>
   </footer>
+
+  <!-- ✅ Structured Data (Google uchun) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ComplectSnab",
+    "url": "https://taminochi-hub.github.io/complectsnab-website/",
+    "logo": "https://taminochi-hub.github.io/complectsnab-website/logo.png",
+    "description": "Qurilish va xo‘jalik mahsulotlari uchun kompleks taminot kompaniyasi.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+998901234567",
+      "contactType": "customer service",
+      "areaServed": "UZ"
+    }
+  }
+  </script>
 
 </body>
 </html>
