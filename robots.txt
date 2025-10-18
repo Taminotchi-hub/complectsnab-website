@@ -1,3 +1,26 @@
+# ✅ ComplectSnab - kompleks ta'minot kompaniyasi uchun yangilangan robots.txt
+# So‘nggi yangilanish: 2025-10-18
+
 User-agent: *
 Allow: /
+
+# ❗ Quyidagilarni indeksdan chiqarish (keraksiz sahifalar yo‘q)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# 🗺️ Google va boshqa qidiruv tizimlarga sayt xaritasi manzili
 Sitemap: https://taminochi-hub.github.io/complectsnab-website/sitemap.xml
+
+# 🔎 Qo‘shimcha optimizatsiya (qidiruv tizimlariga tavsiyalar)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# 📬 Aloqa ma’lumoti
+Host: taminochi-hub.github.io
