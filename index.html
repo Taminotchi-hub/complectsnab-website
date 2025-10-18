@@ -1,32 +1,93 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="uz">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ComplectSnab — Комплексное снабжение</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ComplectSnab — Taminot</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #fdfdfd; color: #222; font-family: 'Inter', sans-serif; }
+    .gold { color: #c6a14b; }
+    .bg-gold { background-color: #c6a14b; }
+    .btn { padding: 8px 16px; border-radius: 6px; border: 1px solid #c6a14b; color: #003366; }
+    .btn:hover { background-color: #c6a14b; color: white; }
+  </style>
 </head>
-<body class="bg-white text-gray-900 antialiased">
-  <header class="shadow-sm">
-    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-4">
-        <div class="w-12 h-12 rounded-md bg-black flex items-center justify-center text-white font-semibold">CS</div>
-        <div>
-          <h1 class="text-lg font-bold">ComplectSnab</h1>
-          <p class="text-sm text-gray-600">Надёжный партнёр в комплексных поставках</p>
-        </div>
+
+<body class="antialiased">
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-800">ComplectSnab <span class="gold">Taminot</span></h1>
+      <div>
+        <button id="langUz" class="btn">🇺🇿 UZ</button>
+        <button id="langRu" class="btn">🇷🇺 RU</button>
       </div>
     </div>
   </header>
 
-  <main class="container mx-auto px-6 py-12">
-    <h2 class="text-3xl font-extrabold leading-tight">ComplectSnab — надёжный партнёр в комплексных поставках</h2>
-    <p class="mt-4 text-gray-700">Мы поставляем оборудование и материалы для строительства, производства и хозяйственной деятельности.</p>
-    <p class="mt-2 text-gray-700">Телефон: +998917859039 | Telegram: @complectsnab</p>
+  <main class="max-w-6xl mx-auto px-4 py-10">
+    <section class="text-center mb-10">
+      <h2 id="title" class="text-3xl font-bold text-blue-900">ComplectSnab — Кенг қамровли таъминот</h2>
+      <p id="subtitle" class="mt-3 text-gray-700 text-lg">Сифат, тезкорлик ва ишонч — бизнинг асосий тамойилларимиз.</p>
+    </section>
+
+    <section id="about" class="mb-10">
+      <h3 class="text-2xl font-semibold gold mb-2">Биз ҳақимизда</h3>
+      <p id="aboutText" class="text-gray-700">
+        ComplectSnab компанияси қурилиш, ишлаб чиқариш ва хўжалик соҳалари учун маҳсулотларни кенг қамровли таъминот билан таъминлайди.
+      </p>
+    </section>
+
+    <section id="services" class="mb-10">
+      <h3 class="text-2xl font-semibold gold mb-2">Хизматлар</h3>
+      <ul id="servicesList" class="list-disc ml-6 text-gray-700">
+        <li>Таъминот ва логистика</li>
+        <li>Қурилиш материаллари</li>
+        <li>Хўжалик маҳсулотлари</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="mb-10">
+      <h3 class="text-2xl font-semibold gold mb-2">Алоқа</h3>
+      <p id="contactText" class="text-gray-700">
+        Телефон: <a href="tel:+998917859039" class="text-blue-700">+998 91 785 90 39</a><br>
+        Telegram: <a href="https://t.me/complectsnab" class="text-blue-700">@complectsnab</a>
+      </p>
+    </section>
   </main>
 
-  <footer class="border-t py-6 text-center text-sm text-gray-600">
-    © 2025 ComplectSnab — Все права защищены
+  <footer class="bg-blue-900 text-white text-center py-4">
+    © 2025 ComplectSnab — Taminot. Барча ҳуқуқлар ҳимояланган.
   </footer>
+
+  <script>
+    const langData = {
+      uz: {
+        title: "ComplectSnab — Кенг қамровли таъминот",
+        subtitle: "Сифат, тезкорлик ва ишонч — бизнинг асосий тамойилларимиз.",
+        aboutText: "ComplectSnab компанияси қурилиш, ишлаб чиқариш ва хўжалик соҳалари учун маҳсулотларни кенг қамровли таъминот билан таъминлайди.",
+        servicesList: "<li>Таъминот ва логистика</li><li>Қурилиш материаллари</li><li>Хўжалик маҳсулотлари</li>",
+        contactText: "Телефон: <a href='tel:+998917859039' class='text-blue-700'>+998 91 785 90 39</a><br>Telegram: <a href='https://t.me/complectsnab' class='text-blue-700'>@complectsnab</a>"
+      },
+      ru: {
+        title: "ComplectSnab — Комплексное снабжение",
+        subtitle: "Качество, оперативность и надёжность — наши главные принципы.",
+        aboutText: "Компания ComplectSnab обеспечивает комплексные поставки товаров для строительства, производства и хозяйственной деятельности.",
+        servicesList: "<li>Снабжение и логистика</li><li>Строительные материалы</li><li>Хозяйственные товары</li>",
+        contactText: "Телефон: <a href='tel:+998917859039' class='text-blue-300'>+998 91 785 90 39</a><br>Telegram: <a href='https://t.me/complectsnab' class='text-blue-300'>@complectsnab</a>"
+      }
+    };
+
+    document.getElementById("langUz").onclick = () => setLang("uz");
+    document.getElementById("langRu").onclick = () => setLang("ru");
+
+    function setLang(lang) {
+      document.getElementById("title").innerHTML = langData[lang].title;
+      document.getElementById("subtitle").innerHTML = langData[lang].subtitle;
+      document.getElementById("aboutText").innerHTML = langData[lang].aboutText;
+      document.getElementById("servicesList").innerHTML = langData[lang].servicesList;
+      document.getElementById("contactText").innerHTML = langData[lang].contactText;
+    }
+  </script>
 </body>
 </html>
