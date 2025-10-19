@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>ComplectSnab — Qurilish va xo‘jalik mahsulotlari</title>
+    <link>https://taminochi-hub.github.io/complectsnab-website/</link>
+    <description>ComplectSnab — sifatli qurilish va xo‘jalik mahsulotlari ta’minoti.</description>
+    <language>uz</language>
+
+    <item>
+      <title>🧱 Yangi mahsulotlar seriyasi keldi</title>
+      <link>https://taminochi-hub.github.io/complectsnab-website/#new-products</link>
+      <description>ComplectSnab’da yangi qurilish materiallari sotuvda! Sifatli, ishonchli va tez yetkazib beramiz.</description>
+      <pubDate>Sun, 20 Oct 2025 12:00:00 +0500</pubDate>
+    </item>
+
+    <item>
+      <title>🚛 Tezkor yetkazib berish xizmati</title>
+      <link>https://taminochi-hub.github.io/complectsnab-website/#delivery</link>
+      <description>Endi siz buyurtmangizni 24 soat ichida qabul qilishingiz mumkin! ComplectSnab bilan tez va ishonchli yetkazib berish.</description>
+      <pubDate>Mon, 21 Oct 2025 09:00:00 +0500</pubDate>
+    </item>
+
+    <item>
+      <title>🤝 Hamkorlik takliflari</title>
+      <link>https://taminochi-hub.github.io/complectsnab-website/#partners</link>
+      <description>Biz bilan uzoq muddatli hamkorlikni boshlang. Eng yaxshi shartlar, maxsus narxlar va tez xizmat!</description>
+      <pubDate>Tue, 22 Oct 2025 09:00:00 +0500</pubDate>
+    </item>
+  </channel>
+</rss>
